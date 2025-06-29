@@ -39,6 +39,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="flex flex-col flex-grow bg-white shadow-lg">
           <div className="flex items-center justify-center h-16 px-4 bg-primary-600">
             <h1 className="text-white text-lg font-bold">Jay Copilot</h1>
+            {/* Cache buster: 2024-12-19-v2 */}
           </div>
           
           <nav className="flex-1 px-4 py-6 space-y-2">
