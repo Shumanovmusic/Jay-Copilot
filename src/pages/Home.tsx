@@ -16,10 +16,11 @@ export default function Home() {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <Accordion 
-        title="Анализ вовлеченности пользователей Jay Copilot"
+        title="Jay Copilot - AI-помощник для разработчиков"
         summary={editedContent.summary}
         content={editedContent.content}
         isEditing={isEditing}
+        defaultExpanded={true}
         onSummaryChange={updateSummary}
         onContentChange={updateContent}
         onStartEdit={startEditing}

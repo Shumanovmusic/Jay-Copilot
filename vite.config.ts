@@ -5,4 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/Jay-Copilot/',
+  build: {
+    rollupOptions: {
+      output: {
+        // Force new file names to bust cache
+        entryFileNames: `assets/[name]-[hash]-v3.js`,
+        chunkFileNames: `assets/[name]-[hash]-v3.js`,
+        assetFileNames: `assets/[name]-[hash]-v3.[ext]`
+      }
+    }
+  }
 })

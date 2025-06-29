@@ -9,6 +9,7 @@ interface AccordionProps {
   summary: string;
   content: string;
   isEditing?: boolean;
+  defaultExpanded?: boolean;
   onSummaryChange?: (newSummary: string) => void;
   onContentChange?: (newContent: string) => void;
   onStartEdit?: () => void;
@@ -22,6 +23,7 @@ export default function Accordion({
   summary, 
   content, 
   isEditing = false,
+  defaultExpanded = false,
   onSummaryChange,
   onContentChange,
   onStartEdit,
@@ -29,7 +31,7 @@ export default function Accordion({
   onCancelEdit,
   onReset
 }: AccordionProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
 
   // Настройки для ReactMarkdown с поддержкой таблиц и других элементов
   const markdownComponents = {
