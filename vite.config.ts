@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   base: '/Jay-Copilot/',
@@ -9,9 +9,9 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // Force new file names to bust cache
-        entryFileNames: `assets/[name]-[hash]-v3.js`,
-        chunkFileNames: `assets/[name]-[hash]-v3.js`,
-        assetFileNames: `assets/[name]-[hash]-v3.[ext]`
+        entryFileNames: `assets/[name]-[hash]-v5-manual.js`,
+        chunkFileNames: `assets/[name]-[hash]-v5-manual.js`,
+        assetFileNames: `assets/[name]-[hash]-v5-manual.[ext]`
       }
     }
   }

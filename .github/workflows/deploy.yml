@@ -1,10 +1,11 @@
-name: Deploy to GitHub Pages
+# GitHub Actions временно отключен - используем ручной деплой
+name: Deploy to GitHub Pages (DISABLED)
 
 on:
   push:
-    branches: [ main ]
+    branches: [ disabled-branch-that-does-not-exist ]
   pull_request:
-    branches: [ main ]
+    branches: [ disabled-branch-that-does-not-exist ]
 
 jobs:
   build-and-deploy:
