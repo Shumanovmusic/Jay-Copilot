@@ -43,8 +43,8 @@
 
 ### Установка
 ```bash
-git clone https://github.com/YOUR_USERNAME/jay-copilot-analysis.git
-cd jay-copilot-analysis
+git clone https://github.com/Shumanovmusic/Jay-Copilot.git
+cd Jay-Copilot
 npm install
 ```
 
@@ -83,6 +83,9 @@ npm run deploy
 1. **Библиотека шаблонов** (Score: 10.00)
 2. **Персонализированный онбординг** (Score: 6.67) 
 3. **Интерактивные предложения** (Score: 5.33)
+
+## 🌐 Живая демо
+**Сайт доступен по адресу:** [https://shumanovmusic.github.io/Jay-Copilot/](https://shumanovmusic.github.io/Jay-Copilot/)
 
 ## 👨‍💼 Автор
 
