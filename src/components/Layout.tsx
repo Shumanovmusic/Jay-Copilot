@@ -38,7 +38,7 @@ export default function Layout({ children }: LayoutProps) {
       <aside className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0">
         <div className="flex flex-col flex-grow bg-white shadow-lg">
           <div className="flex items-center justify-center h-16 px-4 bg-primary-600">
-            <h1 className="text-white text-lg font-bold">Jay Copilot Analysis</h1>
+            <h1 className="text-white text-lg font-bold">Jay Copilot</h1>
           </div>
           
           <nav className="flex-1 px-4 py-6 space-y-2">
@@ -63,7 +63,7 @@ export default function Layout({ children }: LayoutProps) {
       <div className="lg:hidden">
         <div className="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
           <div className="flex items-center justify-between h-16 px-4">
-            <h1 className="text-gray-900 text-lg font-bold">Jay Copilot Analysis</h1>
+            <h1 className="text-gray-900 text-lg font-bold">Jay Copilot</h1>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
