@@ -1,69 +1,100 @@
-# React + TypeScript + Vite
+# Jay Copilot Analysis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Интерактивное представление анализа вовлеченности пользователей продукта Jay Copilot**
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 О проекте
 
-## Expanding the ESLint configuration
+Это интерактивное веб-приложение представляет анализ вовлеченности пользователей продукта Jay Copilot, выполненный по методологии **Double Diamond**. Анализ направлен на решение ключевой проблемы низкого удержания пользователей.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎯 Основные проблемы
+- **80% пользователей** делают всего 1-5 запросов
+- **Резкий отток на D2** (второй день)  
+- **Почти полный отток к D14**
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🔍 Методология: Double Diamond
+- **Discovery** - Исследование рынка, трендов AI, анализ конкурентов
+- **Define** - Формулировка ключевых проблем и точек оттока
+- **Develop** - Разработка гипотез решений и прокси-метрик
+- **Deliver** - Приоритизация фичей и план реализации
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ✨ Ключевые функции
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 📊 **Интерактивная таблица скоринга** с автоматическим пересчетом приоритетов
+- ✏️ **Редактирование контента** прямо в браузере с сохранением в localStorage
+- 📱 **Адаптивный дизайн** для всех устройств
+- 🎨 **Современный UI** с анимациями Framer Motion
+- 📋 **Markdown поддержка** включая таблицы (GitHub Flavored Markdown)
+
+## 🛠️ Технологии
+
+- **React 19** + **TypeScript** - для типобезопасной разработки
+- **Vite** - быстрая сборка и горячая перезагрузка
+- **TailwindCSS** - утилитарные CSS классы
+- **Framer Motion** - плавные анимации
+- **React Router** - маршрутизация SPA
+- **React Markdown** - рендеринг Markdown контента
+
+## 🚀 Быстрый старт
+
+### Установка
+```bash
+git clone https://github.com/YOUR_USERNAME/jay-copilot-analysis.git
+cd jay-copilot-analysis
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Запуск локально
+```bash
+npm run dev
 ```
+Приложение будет доступно на `http://localhost:5174`
+
+### Сборка для продакшена
+```bash
+npm run build
+```
+
+## 🌐 Деплой на GitHub Pages
+
+### Автоматический деплой
+1. Загрузите код в репозиторий GitHub
+2. В Settings → Pages выберите "GitHub Actions"
+3. Сайт автоматически задеплоится при каждом push в main
+
+### Ручной деплой
+```bash
+npm run deploy
+```
+
+Подробные инструкции в [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+## 📊 Ключевые находки анализа
+
+**Главная проблема:** Пользователи сталкиваются с "проблемой чистого листа" и не понимают, как эффективно использовать возможности Jay Copilot.
+
+**Решение:** Создание библиотеки готовых шаблонов и сценариев, персонализированных под роли и задачи пользователей.
+
+**Топ-3 приоритетные гипотезы:**
+1. **Библиотека шаблонов** (Score: 10.00)
+2. **Персонализированный онбординг** (Score: 6.67) 
+3. **Интерактивные предложения** (Score: 5.33)
+
+## 👨‍💼 Автор
+
+**Шухрат Нурманов**
+- [LinkedIn](https://www.linkedin.com/in/shukhrat-nurmanov)
+- Product Manager с опытом работы в AI/ML продуктах
+- Специализация: активация пользователей и growth-стратегии
+
+## 📄 Лицензия
+
+Этот проект создан как тестовое задание и демонстрация навыков продуктового анализа.
+
+---
+
+⭐ **Поставьте звезду, если проект был полезен!**
